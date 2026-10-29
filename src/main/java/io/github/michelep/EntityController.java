@@ -120,14 +120,6 @@ public class EntityController<T extends EliteEntity>
         return entityManager.contains(entity);
     }
 
-
-
-    /**
-     * Sets the JPA persistence unit
-     *
-     * @param persistenceUnit name of the persistence unit
-     * @return singleton instance of the Model
-     */
     public static void setPersistenceUnit(String persistenceUnit)
     {
         EntityController.persistenceUnit = persistenceUnit;
